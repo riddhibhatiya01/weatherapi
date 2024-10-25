@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather API</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- bootstarps -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card" style=" background-color: rgba(253, 253, 253, 0.5);
+    backdrop-filter: blur(2px);">
+      <h1 class="text-center" style="margin-bottom: 20px; color:rgb(5, 16, 65); font-weight: 700;">Weather Information
+      </h1>
+      <div class="" id="form-submit">
+        <div class="dropdown">
+          <select class="form-select" id="country" onchange="findCountry();"
+            style="background-color: #005964; color: #0f0d0d;">
+          </select>
+
+          <select class="form-select" id="state" onchange="findState();"
+            style="background-color: #005964; color: #0f0d0d;">
+          </select>
+
+          <select class="form-select" id="city" onchange="findCity();"
+            style="background-color: #005964; color: #0f0d0d;">
+          </select>
+        </div>
+      </div>
+      <div class="weather" id="weather">
+        <h1 class="temp" id="temp"></h1>
+        <h2 class="cityName" id="cityName">City Temp</h2>
+        <div class="details">
+          <div class="row">
+            <div class="col">
+              <p>Humidity : </p>
+              <p class="humidity" id="humidity"></p>
+            </div>
+            <div class="col">
+              <p>Wind : </p>
+              <p class="wind" id="wind"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- jquery -->
+  <script src="assets/js/jquery.js"></script>
+  <!-- js -->
+  <script src="assets/js/final.js"></script>
+
+</body>
+
+
+</html>

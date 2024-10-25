@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(../images/download.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+.card {
+    width: 70%;
+    max-width: 770px;
+    margin: 80px auto;
+    padding: 40px;
+    height: 85vh;
+
+}
+
+.dropdown select {
+    width: 190px;
+    margin: 15px;
+    display: inline;
+}
+
+select option {
+    color: #ffffff;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.submit .btn {
+    background-color: #005964;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.5s linear;
+}
+
+.submit .btn:hover {
+    background-color: #FFBAC3;
+    color: #000;
+    border: 0;
+    border-radius: 10px;
+}
+
+.weather {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 55px;
+    color: #030c41;
+}
+
+.weather h2 {
+    font-size: 45px;
+    color: #030c41;
+    font-weight: 500;
+}
+
+.details {
+    margin-top: 50px;
+}
+
+.details .humidity,
+.details .wind {
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(71, 48, 14);
+}
+
+.details p:nth-child(1) {
+    font-size: 25px;
+    font-weight: 800;
+    color: #030c41;
+   
+}
